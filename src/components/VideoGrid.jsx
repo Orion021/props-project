@@ -1,14 +1,23 @@
-function VideoCard(props) {
-  return (
-    <div className="video-card">
-      <div className="thumbnail">
-        <span className="duration">2:00</span>
-      </div>
+import VideoCard from "./VideoCard";
 
-      <h4>{props.title}</h4>
-      <p className="meta">Channel Name • 2 days ago</p>
+function VideoGrid() {
+  return (
+    <div>
+      <h3>Recommended for You</h3>
+
+      <div className="video-grid">
+        <VideoCard title="Learn English While Sleeping" />
+        <VideoCard title="Learn English While Sleeping" />
+        <VideoCard title="Learn English While Sleeping" />
+        <VideoCard title="Learn English While Sleeping" />
+
+        <VideoCard title="Learn English While Sleeping" />
+        <VideoCard title="Learn English While Sleeping" />
+        <VideoCard title="Learn English While Sleeping" />
+        <VideoCard title="Learn English While Sleeping" />
+      </div>
     </div>
   );
 }
 
-export default VideoCard;
+export default VideoGrid;

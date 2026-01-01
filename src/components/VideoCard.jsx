@@ -1,23 +1,14 @@
-import VideoCard from "./VideoCard";
-
-function VideoGrid() {
+function VideoCard(props) {
   return (
-    <div>
-      <h3>Recommended for You</h3>
-
-      <div className="video-grid">
-        <VideoCard title="Learn English While Sleeping" />
-        <VideoCard title="Learn English While Sleeping" />
-        <VideoCard title="Learn English While Sleeping" />
-        <VideoCard title="Learn English While Sleeping" />
-
-        <VideoCard title="Learn English While Sleeping" />
-        <VideoCard title="Learn English While Sleeping" />
-        <VideoCard title="Learn English While Sleeping" />
-        <VideoCard title="Learn English While Sleeping" />
+    <div className="video-card">
+      <div className="thumbnail">
+        <span className="duration">2:00</span>
       </div>
+
+      <h4>{props.title}</h4>
+      <p className="meta">Channel Name • 2 days ago</p>
     </div>
   );
 }
 
-export default VideoGrid;
+export default VideoCard;
