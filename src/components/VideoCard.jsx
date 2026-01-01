@@ -6,7 +6,7 @@ function VideoCard(props) {
       </div>
 
       <h4>{props.title}</h4>
-      <p className="meta">Channel Name • 2 days ago</p>
+      <p className="meta">Channel Name - 2 days ago</p>
     </div>
   );
 }
